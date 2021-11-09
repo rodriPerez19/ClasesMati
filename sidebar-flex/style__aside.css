@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main__container{
+    height: 100vh;
+    position: relative;
+}
+.aside__container{
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 300px;
+    border: 1px solid black;
+    
+}
+.options{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #101827;
+}
+.main__container{
+    position: relative;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.navbar{
+    position: relative;
+    height: 15%;
+}
+h1,h3{
+    color: #fff;  
+}
+h3{
+    margin: 5px;
+}
+.nav__content{
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color:#101827 ;
+}
+.nav__left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61 65 131 / 80%);
+    width: 35%;
+    
+}
+.search input{
+    border: none;
+    background:none;  
+    color: #fff;
+    outline: none;
+    
+}
+.search span{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.MyButton {
+    width: 50%;
+    position: relative;
+    height: 30%;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.MyButton button{
+    background-color: #2869ff;
+    border: none;
+    color: #fff;
+    width: 20%;
+    float:right;
+    padding: 5px;
+    margin: 0 20px 0 0;
+    border-radius: .5em;
+}
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 85%;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 300px;    
+    background-color: rgba(61 ,65, 131,0.4 );
+}
+.card__img{
+    background-position: center ;
+    background-position: cover;
+    height: 45%;
+    margin: 5px;
+    border-radius: .3em;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+}
+.card__body{
+    height: 55%;
+}
+.card__left{
+    width: 50%;
+    height: 75%;
+    float: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+.card__left p{
+    padding: 0 0 0 5px;
+    font-size: 13px;
+}
+.card__rigth{
+    width: 50%;
+    height: 75%;
+    float: right;
+    color: #fff;
+    text-align: end;
+}
+.card__rigth p{
+    text-align: end;
+    padding: 0 5px 0 0;
+    font-size: 13px;
+}
+.punto__verde{
+    width: 7px;
+    height: 7px;
+    background-color:rgba(51, 255, 10,0.5) ;
+    display: inline-block;
+    border-radius: 1em;
+}
+.verde{
+    color: rgba(51, 255, 10);
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(51, 255, 10,0.1);
+    font-size: 13px;
+}
+.disabled{
+    color: rgb(109, 124, 155);
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(47, 0, 255, 0.2);
+    font-size: 13px;
+}
+.punto__disabled{
+    width: 7px;
+    height: 7px;
+    background-color: rgba(47, 0, 255, 0.5);
+    display: inline-block;
+    border-radius: 1em;
+}

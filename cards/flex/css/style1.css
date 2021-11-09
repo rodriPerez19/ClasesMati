@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ .gradient__main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card1, .card2, .card3{
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    
+    flex-direction: column; 
+    border-radius: 1em;
+}
+.card1,.log1{
+    background: linear-gradient(
+    -45deg, #f321d7,#6198ff);
+}
+.card2,.log2{
+    background: linear-gradient(
+    -45deg, #ffec61, #f321d7);
+}
+.card3,.log3{
+    background: linear-gradient(
+    -45deg, #00ff4c,#6461ff);
+}
+.log1,.log2,.log3{
+    padding: 15px;
+    border-radius: 2em;
+    font-size: 50px;
+}
+.logo{    
+    position: relative;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log2{
+    transform: rotate(-45deg);
+}
+h2{
+    font-size: 50px;
+}
+p{
+    padding: 5px;
+}
+.precio{
+    font-size: 50px;
+}
+button{
+    width: 90%;
+    color: #000;
+    padding: 10px;
+    margin: 5px 0 0 0;
+    border: none;
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: 15px;
+}
+.check{
+    margin: 0 5px 0 0;
+}
