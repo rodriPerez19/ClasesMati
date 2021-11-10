@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #15141b;
+}
+.main__container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: ShopifySans, Helvetica, Arial, Lucida Grande, sans-serif;
+    /* color: white; */
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    width: 80%;
+    
+}
+.navbar img{
+    width: 115px;
+    height: 30px;
+}
+
+.options1,.options2{    
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;color: #fff;
+}
+.options1 button,.options2 button {
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+    
+.option{
+    position: relative;
+    --bajar:translateY(0px);
+    --clip:polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.option button{
+    color: #fff;
+}
+.bajar{
+    transform: var(--bajar);
+}
+.option:hover{
+    --clip:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    --bajar:translateY(5px)
+}
+.option button:focus{
+    outline: none;
+    border-radius: 25px;
+    transition: box-shasow 300ms;
+    box-shadow: 0 0 0 3px #1fb0ff;
+    padding: 5px;
+}
+.dropdown{
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    position: absolute;
+    clip-path: var(--clip);
+}
+
+.option-v button{
+    cursor: pointer;
+    color: rgb(208, 242, 36);
+}
+.container{
+    margin: 100px 0 0 0;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container__content{
+    display: flex ;
+    width: 80%;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+}
+
+.rigth{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h6{
+    color: rgb(208 242 36);
+    font-size: 20px;
+}
+
+.left h1{
+    color: white;
+    font-size: 70px;
+    margin: 10px 0 0 0;
+}
+
+.left p{
+    color: white;
+    font-size: 25px;
+    margin: 15px 0 0 0;
+}
+
+.left button{
+    width: 147px;
+    height: 35px;
+    background: rgb(208 242 36);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid video{
+    width: 80%;
+    height: 80%;
+}
+footer{
+    height: 15%;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+footer>img{
+    
+    z-index: 1000;
+    margin: 10px 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
