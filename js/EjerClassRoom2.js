@@ -64,10 +64,10 @@ log(arr)
 
 //la funcion filter itera el array y si la condicion dentro da true, lo agrega al nuevo array ese elemento
 //indexof retorna la posision de la primera vez que aparece un elemento
-   let result = arr.filter((item,index)=>{
-       return arr.indexOf(item) === index;
-    })
-   log(result); 
+let result = arr.filter((item,index)=>{
+    return arr.indexOf(item) === index;
+})
+log(result); 
 
 
 

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dongle', sans-serif ;
+    
+}
+.navbar{
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    font-weight: bold;
+}
+.navbar__content{
+    background-color: #fff;
+    position:fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 2;
+}
+.options__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 40px;
+}
+.options__left a,.options__rigth a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.select{
+    border-bottom: 5px solid #1e3932;
+}
+.options__rigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0 40px 0 0;
+}
+
+.options__rigth p{
+    display: flex;
+    gap: 10px;
+}
+.btn-1{
+    cursor: pointer;
+    background:none;
+    border-radius: 1em;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+.btn-2{
+    color: #fff;
+    cursor: pointer;
+    background:black;
+    border-radius: 1em;
+    padding: 5px 10px;
+}
+.container__content{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__content>p{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    
+    padding: 0 0 0 40px;
+    background-color: #1e3932;
+    width: 100%;
+    height: 7%;
+    color: #fff;
+    font-size: 20px;
+}
+.content{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.content__img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image:url(oriHermosa.jpg);
+    background-position:center ;
+    background-size: cover;
+    z-index: -1;
+}
+.content__text{
+    
+    margin: 30px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    bottom: 0;
+    gap: 20px;
+}
+.content__text h1{
+    width: 30%;
+    line-height: 35px;
+}
+.btn-3{
+    background-color: #007645;
+    border-radius: 1em;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+}
+
+.container{
+    font-family: 'Dongle', sans-serif ;
+    font-size: 25px;
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3{
+    margin: 100px 0 0 0;
+}
+
+.container-columns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: -100px 0 0 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+}
+
+.column>*{
+    padding: 20px 0 0 0;
+    text-align: center;
+
+}
+
+.column p{
+    padding: 20px 50px 0 50px;
+}
+
+.column a{
+    color: rgb(132 188 162);
+}
+
+.circulo{
+    
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0 17px;
+    color: rgb(6 63 32);
+    font-weight: bold;
+    border: 1px solid rgb(6 63 32);
+    font-size: 35px;
+    border-radius: 100%;
+}
