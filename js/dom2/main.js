@@ -1,6 +1,6 @@
 const p= document.querySelectorAll('p');
 const a= document.querySelector('a');
-console.log(p)
+
 let contador=0;
 p.forEach(element => {
     contador+=element.textContent.length
@@ -16,8 +16,8 @@ document.body.before(`Cantidad de palabras ${contador}`)
 a.addEventListener('click',(e)=>{
 
     e.preventDefault();
-
-    p[0].innerHTML=a.textContent;
+    p[0].innerHTML=a.href;
+    
 })
 
 const img= document.createElement('img');
