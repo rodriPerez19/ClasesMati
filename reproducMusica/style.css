@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dbe3ec;
+}
+.card{
+    border-radius: 1em;
+    width: 350px;
+    height: 450px;
+    background: #eef3f7;
+    box-shadow: 0px 15px 35px -5px rgb(50 88 130 / 32%);
+}
+.img__share{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg__img{
+    background-image: url("https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45%;
+    width: 20%;
+    left: 35%;
+    top: 18%;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #000 ;
+}
+.icons{
+    position: relative;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    color: #abb9cd;
+    gap: 25px;
+    margin: 50px 40px 0 0 ;
+}
+.more{
+    font-size: 75px;
+    color: #fff;
+}
+.card__info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    font-family: "Bitter", serif;
+    font-weight: bolder;
+    color: #abb9cd;
+    padding: 20px;
+}
+.time{
+    text-align: end;
+    
+    border-bottom: 5px solid;
+}
+.title{
+    color: #788291;
+}
+#play{
+    cursor: pointer;
+}
+.like{
+    color: red;
+}
+#like{
+    cursor: pointer;
+}
