@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Clase card__tittle */
+    --font-family:'Poppins', sans-serif;
+    --color-bg-card__title:linear-gradient(90deg, rgb(173, 3, 159), rgb(36, 0, 95));
+    --font-w-sub__price: bold;
+    /*Card footer*/
+    --color-bg-card__footer:#3080fb;
+
+}
+.subcription{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: var(--font-family);
+}
+.card__subcription{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.card__title{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-bg-card__title);
+    font-family: var(--font-family);
+    height: 20%;
+}
+.card__title>h1{
+    padding: 8px;
+}
+.sub__price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8px;
+    font-weight: var(--font-w-sub__price);
+}
+.txt__midle{
+    padding: 15px;
+}
+.include{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 40%;
+}
+.include__extras{
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+    height: 100%;
+}
+.include__extras>img{
+    width: 35%;
+    height: 55%;
+}
+.include__extras.camion>img{
+    width: 30%;
+    height: 55%;
+}
+.extras__p{
+    margin-right: 10px;
+    width: 55%;
+}
+.card__footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+}
+
+.card__footer>button{
+    background-color:var(--color-bg-card__footer) ; 
+    border: none;
+    border-radius: .6em;
+    padding: 15px 20px;
+    margin: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.card__footer>p{
+    margin: 20px;
+}
+.beneficios{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.beneficios>a{
+  text-decoration: none;
+  font-size: 17px;
+}
+.carousel__container{
+    position: relative;
+    width: 80%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 7.5px;
+}
+.carousel>img{
+    width: 33%;
+}
+.arrow{
+    position: absolute;
+    z-index: 1;
+    right: -2%;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #fff;
+    color: var(--color-bg-card__footer);
+
+}
+
+footer{
+    height: 15vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer__txt{
+    display: flex;
+    gap: 15px;
+}
+.copy{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Guille*/
+.historialContainer {
+    
+    height: 400px;
+  }
+  .txt {
+    display: flex;
+    margin-left: 11rem;
+    padding: 20px 0 20px 100px;
+  }
+  a {
+    color: blue; /* COLOR */
+    font-size: 8px;
+    margin: 8px 0 0 8px;
+    text-decoration: underline;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15rem;
+    width: 90rem;
+  }
+  .card {
+    background: white; /* COLOR */
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .price {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  .line {
+    color: rgba(248, 248, 248, 0.5); /* COLOR */
+  }
+  
+  /*SECCION 5*/
+  
+  .hero {
+    border: 1px solid blue;
+    width: 90rem;
+    height: 450px;
+    margin: 50px 0 0 200px;
+  }
+  
+  .vl {
+      border-left: 1px solid rgb(185, 182, 182);
+      height: 80px;
+      margin-top: 110px;
+    }
+  
+  .top {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .content {
+    
+    text-align: center;
+    padding: 40px;
+    margin: 50px 0 0 20px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .left {
+    text-align: center;
+    border: 1px solid rgb(228, 228, 228);
+    margin: 50px 0 0 20px;
+  }
+  .right {
+    text-align: center;
+    border: 1px solid rgb(228, 228, 228);
+    margin: 50px 0 0 20px;
+  }
+
+  body{
+      font-family: var(--font-family);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.categoriasPopulares{
+    padding: 2rem;
+}
+
+.onNavHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.onNavHeader>p{
+    display: flex;
+    align-items: center;
+}
+
+.gridListActive{
+    color: skyblue;
+    font-size: 150%;
+}
+
+.gridContainer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    color: skyblue;
+    grid-template-rows: 100px 100px;
+}
+
+.gridBlock{
+    padding: 1rem;
+    border: solid rgb(212, 212, 212) 1px;
+}
+
+.gridBlock>i{
+    font-size: 2rem;
+}
+
+.gridBlock>p{
+    color: grey;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+/*****************************************************************************/
+
+nav>*>*>li{
+    list-style: none;
+}
+nav{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+}
+
+.navLeft{
+    display: flex;
+    flex-direction: column;
+}
+.logoD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navRight{
+    display: flex;
+    flex-direction: column;
+}
+.navRight>ul{
+    display: flex ;
+}
+.navRight img{
+    width: 60px;
+    height: 40px;
+}
+.navUl{
+    display: flex;
+    gap: 10px;
+}
+.navCenter{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.navCenter input{
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+}
+.payMethods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.payMethodsFlexContainer{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+}
+.payMethodsFlexBox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.flexEnd{
+    align-self: flex-end;
+}
+
+.flexLink{
+    color: skyblue;
+    font-size: 80%;
+    margin: 0.3rem;
+}
+.banner>img{
+    width: 100%;
+}
