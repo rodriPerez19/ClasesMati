@@ -25,3 +25,4 @@ const img= document.createElement('img');
 img.src="discord.png";
 
 document.body.appendChild(img)
+

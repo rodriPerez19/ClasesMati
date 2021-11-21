@@ -56,7 +56,7 @@ divLista.after(parrafo)
 // 4.
 // Crear un contenedor de 400x400 con 2 botones.
 // Al ser clickeado el contenedor debe cambiar el background a rojo
-// Cada boton debe estar dentro del contenedor y al clickear dar un console.log('boton 1/2 se ejecuto')
+// Cada boton debe estar dentro del contenedor y al  
 
 
 let contenedor= document.createElement('div')
@@ -100,7 +100,7 @@ inputApellido.placeholder="ingrese su Apellido";
 submit.type="submit";
 submit.innerHTML="Enviar";
 
-form.appendChild(inputName,inputApellido,submit);
+form.appendChild(inputName);
 form.appendChild(inputApellido);
 form.appendChild(submit);
 

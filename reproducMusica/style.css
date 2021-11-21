@@ -38,7 +38,7 @@
     top: 18%;
     position: absolute;
     border-radius: 1em;
-    box-shadow: 0 0 10px #000 ;
+    box-shadow: 0 0 10px #000  ;
 }
 .icons{
     position: relative;
@@ -56,7 +56,7 @@
 }
 .more{
     font-size: 75px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
 }
 .card__info{
     display: flex;
