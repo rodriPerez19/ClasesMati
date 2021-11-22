@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__container{
+    /* height: 100vh; */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+                        "nav       nav       nav"
+                        "contenido contenido sidebar"
+                        "public     public    public";
+}
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.nav1>button{
+    color: #00a3bf ;
+    border-color: #00b8d9 ;
+    border:2px solid;
+    border-radius: 3px ;
+    background: transparent ;
+    transition: 1s;
+    padding: 10px;
+}
+.nav1>button:hover{
+    color: #0069bf ;
+    border-color: #0069bf ;
+    background-color:#00b8d9;
+}
+.nav2{
+    padding: 20px 0;
+    background-color: rgb(224, 255, 255);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+}
+.options{
+    display: flex;
+    gap: 40px;
+}
+.options>a{
+    color: #000;
+    text-decoration: none;
+}
+.contenido{
+    grid-area: contenido;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    gap: 20px;
+}
+.footer__img{
+    color: blue;
+    font-size: 20px;
+}
+.card__txt{
+    font-size: 30px;
+    
+}
+.card>h1{
+    font-size: 50px;
+}
+.card>h6{
+    font-size: 20px;
+}
+
+.card>img{
+    width: 100%;
+    height: 50%;
+}
+
+aside{
+    grid-area: sidebar;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+aside>h1{
+    margin: 10px;
+}
+.cards{
+    display: grid;
+    grid-auto-rows: 5rem;
+    grid-template-columns:repeat(auto-fill,minmax(15rem,22rem));
+    gap: 50px;
+}
+.publicaciones{
+    grid-area: public;
+    
+   
+}
+.publics{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(22rem, 33rem));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.public__card>img{
+    width: 100%;
+    height: 50%;
+}
+@media (max-width:1660px){
+    .main__container{
+        /* height: 100vh; */
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+                            "nav       nav       nav"
+                            "contenido contenido contenido"
+                            "sidebar   sidebar   sidebar"
+                            "public     public    public";
+    }
+
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card{
+        font-size: 30px;
+    }
+}
