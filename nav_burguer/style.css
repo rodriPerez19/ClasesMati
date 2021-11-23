@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 20vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: 1s;
+}
+.navbar>a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hamburguesa{
+    display: none;   
+}
+
+
+@media (max-width:452px){
+    .navbar{
+        
+        position: absolute;
+        width: 200px;
+        right: 0;
+        height: 100%;
+        flex-direction: column;
+        --clip: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        clip-path: var(--clip);
+    }
+    .hamburguesa{
+        display: block;
+        position: absolute;
+        padding: 10px;
+        right: 0;
+        cursor: pointer;
+        --translate: translateX(0%);
+        transform: var(--translate);
+        transition: 1s;
+    }    
+
+    .active{
+        --clip: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+    .active__burguer{
+        --translate: translateX(-200px)
+    }
+    .cruz{
+        display: none;
+    }
+    .burguer{
+        display: none;
+    }
+
+}
