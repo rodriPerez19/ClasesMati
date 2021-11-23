@@ -129,6 +129,7 @@ nav{
         --clip: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
         clip-path: var(--clip);
         transition: 1s;
+        background-color: black;
     }
     .hamburguesa{
         display: block;
