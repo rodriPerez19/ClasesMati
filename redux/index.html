@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <title>Redux</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mostrar">
+            <div>Usuario
+                <p id="user">-</p>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                <input type="text" name="correo" id="correo" placeholder="correo">
+                <input type="text" name="pais" id="pais" placeholder="pais">
+                <button id="crear">Crear</button>
+            </div>
+            <div>Carrito
+                <p id="carro">-</p>
+            </div>
+        </div>
+
+        <div class="card__container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">teclado1</h5>
+                    <p class="card-text">precio <span id="precio1">100</span>$</p>
+                    <button id="comprar1">comprar</button>
+                    <button id="eliminar1">eliminar1</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">teclado2</h5>
+                    <p class="card-text">precio <span id="precio2">200</span>$</p>
+                    <button id="comprar2">comprar</button>
+                    <button id="eliminar2">eliminar2</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">teclado3</h5>
+                    <p class="card-text">precio <span id="precio2">300</span>$</p>
+                    <button id="comprar3">comprar</button>
+                    <button id="eliminar3">eliminar3</button>
+                </div>
+            </div>
+            <button id="calcular">Calcular precio</button>
+        </div>
+
+    </div>
+    <script src="main.js"> </script>
+
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .mostrar{
+            display: flex;
+            justify-content: space-between;
+        }
+        .card__container{
+            display: flex;
+            width: 100%;
+            height: 50vh;
+            justify-content: space-around;
+        }
+    </style>
+</body>
+</html>
+
